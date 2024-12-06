@@ -34,6 +34,16 @@ The project is divided into two main modules:
 - **Frontend:** The module responsible for the user interface, built using Vue.js, TypeScript and Tailwind CSS.
 - **Backend:** The module responsible for the application logic and API, built using Laravel 11.
 
+## Project Requirements
+##### Node.js:
+- Version 16.x or higher (recommended)
+- npm (Node Package Manager) comes bundled with Node.js and is used to install frontend dependencies.
+
+##### Composer:
+- Version 2.x or higher (recommended)
+- Composer is used to install and manage PHP dependencies for the backend.
+
+
 ## Installation
 
 Instructions for installing and setting up the project:
@@ -55,7 +65,6 @@ Instructions for installing and setting up the project:
     php artisan key:generate
     ```
 4. Configure the .env file in the backend folder according to your requirements.
-<br>
 
 5. Run database migrations:
     ```bash
