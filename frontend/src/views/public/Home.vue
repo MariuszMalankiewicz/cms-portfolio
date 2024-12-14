@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center h-screen bg-slate-200">
+  <div class="flex items-center justify-center h-screen">
     <h1 class="text-[40px]">STRONA GŁÓWNA</h1>
   </div>
 </template>
