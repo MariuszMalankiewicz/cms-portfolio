@@ -1,17 +1,13 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import Home from '../views/public/Home.vue'
-import About from '../views/public/About.vue'
-
-const routes: Array<RouteRecordRaw> = [
+import { createRouter, createWebHistory } from 'vue-router';
+import PublicLayout from '@/components/layouts/public/PublicLayout.vue';
+const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About,
+    component: PublicLayout,
+    children: [
+      { path: '', name: 'Strona Główna', component: () => import('@/views/public/Home.vue') },
+      { path: 'about', name: 'O Mnie', component: () => import('@/views/public/About.vue') },
+    ],
   },
 ];
 

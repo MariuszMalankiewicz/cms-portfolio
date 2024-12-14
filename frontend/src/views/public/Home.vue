@@ -1,12 +1,11 @@
 <template>
-  <div>
-    <h1 class="text-red-500">Home</h1>
-    <p>Witamy na stronie głównej!</p>
+  <div class="flex items-center justify-center h-screen bg-slate-200">
+    <h1 class="text-[40px]">STRONA GŁÓWNA</h1>
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'HomeView',
+  name: 'Home',
 };
 </script>
