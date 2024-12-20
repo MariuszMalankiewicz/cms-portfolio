@@ -5,46 +5,52 @@
     >
       <img
         :src="ManLooking"
-        class="mt-16 w-[250px] sm:w-[320px] md:w-[420px] lg:w-[490px] xl:w-[560px]"
+        class="mt-16 w-[300px] sm:w-[350px] lg:w-[450px] xl:w-[500px] 2xl:w-[550px] 2xl:mr-10"
         alt="looking-man"
       />
       <div>
-        <div class="mt-12 max-w-[350px] lg:max-w-[370px] xl:max-w-[410px]">
+        <div class="mt-12 max-w-[350px] lg:max-w-[400px] 2xl:max-w-[450px]">
           <h3
-            class="font-bold text-[22px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px]"
+            class="font-semibold text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]"
           >
-            Cześć, nazywam się Mariusz Malankiewicz
+            Cześć, nazywam się
+            <p
+              class="font-bold text-[20px] lg:text-[22px] xl:text-[24px] 2xl:text-[26px]"
+            >
+              Mariusz Malankiewicz
+            </p>
           </h3>
           <p
-            class="text-[16px] sm:text-[16px] md:text-[17px] lg:text-[18px] xl:text-[19px] sm:mt-[4px] md:leading-[30px]"
+            class="text-[16px] lg:text-[18px] leading-[28px] lg:leading-[32px]"
           >
             i jestem web developerem z pasją do tworzenia funkcjonalnych,
             nowoczesnych i estetycznych stron internetowych oraz aplikacji
             webowych. Mam doświadczenie zarówno w front-endzie, jak i
             back-endzie oraz bazach danych.
             <router-link to="/about"
-              ><AnOutlinedMail
+              ><p
                 class="underline transition-all duration-150 ease-in-out text-blue hover:text-blue/70"
-                >czytaj wiecej</AnOutlinedMail
-              ></router-link
+              >
+                czytaj wiecej
+              </p></router-link
             >
           </p>
         </div>
         <div
           class="flex flex-wrap justify-start items-center gap-[20px] mt-6 text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] mb-12"
         >
-          <router-link to="/"
-            ><AnOutlinedMail
-              class="px-4 py-2 mt-4 text-white transition-all duration-150 ease-in-out rounded-md bg-blue sm:px-6 hover:cursor-pointer hover:bg-blue/90"
-              >Zatrudnij Mnie</AnOutlinedMail
+          <router-link to="/portfolio"
+            ><PrimareButton class="text-white hover:bg-blue/90 bg-blue"
+              >Zobacz Projekty</PrimareButton
             ></router-link
           >
-          <router-link to="/"
-            ><AnOutlinedMail
-              class="px-4 py-2 mt-4 text-white transition-all duration-150 ease-in-out rounded-md bg-gray-400/80 sm:px-6 hover:cursor-pointer hover:bg-gray-400"
-              >Pobierz CV</AnOutlinedMail
-            ></router-link
-          >
+          <PrimareButton class="text-white bg-gray-300 hover:bg-gray-400/80">
+            <a
+              href="/frontend/src/assets/files/Mariusz Malankiewicz CV.pdf"
+              download
+              >Pobierz CV</a
+            >
+          </PrimareButton>
         </div>
       </div>
     </div>
@@ -53,11 +59,14 @@
 
 <script>
 import ManLooking from '@/assets/images/man-looking.png';
+import PrimareButton from '@/components/UI/PrimareButton.vue';
 export default {
   name: 'Home',
+  components: { PrimareButton },
   data() {
     return {
       ManLooking,
+      PrimareButton,
     };
   },
 };
