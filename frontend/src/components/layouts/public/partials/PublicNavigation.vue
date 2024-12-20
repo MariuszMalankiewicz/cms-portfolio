@@ -23,8 +23,10 @@
         <router-link to="/">Strona Główna</router-link>
         <router-link to="/about">O Mnie</router-link>
         <router-link to="/portfolio">Portfolio</router-link>
-        <router-link to="/about">Kontakt</router-link>
-        <router-link to="/login">Zaloguj się</router-link>
+        <router-link to="/contact">Kontakt</router-link>
+        <router-link to="/login" class="line-through cursor-not-allowed">
+          Zaloguj się
+        </router-link>
       </ul>
     </div>
   </nav>
@@ -35,8 +37,10 @@
       <router-link to="/">Strona Główna</router-link>
       <router-link to="/about">O Mnie</router-link>
       <router-link to="/portfolio">Portfolio</router-link>
-      <router-link to="/about">Kontakt</router-link>
-      <router-link to="/login">Zaloguj się</router-link>
+      <router-link to="/contact">Kontakt</router-link>
+      <router-link to="/login" class="line-through cursor-not-allowed">
+        Zaloguj się
+      </router-link>
     </ul>
   </nav>
 </template>

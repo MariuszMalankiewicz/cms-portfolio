@@ -5,9 +5,10 @@ const routes = [
     path: '/',
     component: PublicLayout,
     children: [
-      { path: '', name: 'Strona Główna', component: () => import('@/views/public/Home.vue') },
-      { path: '/about', name: 'O Mnie', component: () => import('@/views/public/About.vue') },
+      { path: '', name: 'Home', component: () => import('@/views/public/Home.vue') },
+      { path: '/about', name: 'About', component: () => import('@/views/public/About.vue') },
       { path: '/portfolio', name: 'Portfolio', component: () => import('@/views/public/Portfolio.vue') },
+      { path: '/contact', name: 'Contact', component: () => import('@/views/public/Contact.vue') },
     ],
   },
 ];
