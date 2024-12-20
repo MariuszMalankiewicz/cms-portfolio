@@ -22,8 +22,7 @@
       >
         <router-link to="/">Strona Główna</router-link>
         <router-link to="/about">O Mnie</router-link>
-        <router-link to="/about">Technologie</router-link>
-        <router-link to="/about">Projekty</router-link>
+        <router-link to="/portfolio">Portfolio</router-link>
         <router-link to="/about">Kontakt</router-link>
         <router-link to="/login">Zaloguj się</router-link>
       </ul>
@@ -35,8 +34,7 @@
     <ul class="flex justify-end space-x-12 font-semibold">
       <router-link to="/">Strona Główna</router-link>
       <router-link to="/about">O Mnie</router-link>
-      <router-link to="/about">Technologie</router-link>
-      <router-link to="/about">Projekty</router-link>
+      <router-link to="/portfolio">Portfolio</router-link>
       <router-link to="/about">Kontakt</router-link>
       <router-link to="/login">Zaloguj się</router-link>
     </ul>

@@ -6,7 +6,8 @@ const routes = [
     component: PublicLayout,
     children: [
       { path: '', name: 'Strona Główna', component: () => import('@/views/public/Home.vue') },
-      { path: 'about', name: 'O Mnie', component: () => import('@/views/public/About.vue') },
+      { path: '/about', name: 'O Mnie', component: () => import('@/views/public/About.vue') },
+      { path: '/portfolio', name: 'Portfolio', component: () => import('@/views/public/Portfolio.vue') },
     ],
   },
 ];
