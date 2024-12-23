@@ -24,7 +24,7 @@
         <router-link to="/about">O Mnie</router-link>
         <router-link to="/portfolio">Portfolio</router-link>
         <router-link to="/contact">Kontakt</router-link>
-        <router-link to="/login" class="line-through cursor-not-allowed">
+        <router-link to="/" class="line-through cursor-not-allowed">
           Zaloguj się
         </router-link>
       </ul>
@@ -38,7 +38,7 @@
       <router-link to="/about">O Mnie</router-link>
       <router-link to="/portfolio">Portfolio</router-link>
       <router-link to="/contact">Kontakt</router-link>
-      <router-link to="/login" class="line-through cursor-not-allowed">
+      <router-link to="/" class="line-through cursor-not-allowed">
         Zaloguj się
       </router-link>
     </ul>
