@@ -3,7 +3,7 @@
     <h1
       class="text-[32px] sm:text-[44px] md:text-[52px] text-center font-bold text-blue"
     >
-      Contact
+      Kontakt
     </h1>
     <div
       class="flex flex-col items-center justify-center xl:flex-row xl:flex-wrap lg:space-x-12 2xl:space-x-24"
@@ -14,14 +14,14 @@
         alt="Contact us-rafiki.png"
       />
       <div
-        class="w-[100%] xl:w-[450px] 2xl:w-[600px] text-[15px] sm:text-[16px] md:text-[17px]"
+        class="w-[95%] max-w-[500px] md:max-w-[600px] sm: xl:w-[450px] 2xl:w-[600px] text-[15px] sm:text-[16px] md:text-[17px]"
       >
         <form action="#">
           <label for="name" class="flex flex-col"
-            ><p class="text-dark-gray">Name</p>
+            ><p class="text-dark-gray">Imię i Nazwisko</p>
             <input
               type="text"
-              placeholder="Your name"
+              placeholder="Imię i Nazwisko"
               class="border-b-2 placeholder:text-xs placeholder:ps-1 placeholder:pt-1 focus:text-dark-gray focus:text-text-sm text-dark-gray border-dark-gray focus:outline-none"
           /></label>
           <label for="email" class="flex flex-col mt-4"
@@ -32,19 +32,17 @@
               class="border-b-2 placeholder:text-xs placeholder:ps-1 placeholder:pt-1 focus:text-dark-gray focus:text-text-sm text-dark-gray border-dark-gray focus:outline-none"
           /></label>
           <label for="message" class="flex flex-col mt-4"
-            ><p class="text-dark-gray">Message</p>
+            ><p class="text-dark-gray">Wiadomość</p>
             <textarea
-              placeholder="Your message"
+              placeholder="Twoja Wiadomość"
               class="border-b-2 border-l-2 border-r-2 placeholder:text-xs placeholder:ps-2 placeholder:pt-1 focus:text-dark-gray focus:text-text-sm text-dark-gray focus:ps-1 rounded-b-md border-dark-gray focus:outline-none"
               cols="30"
-              rows="3"
+              rows="5"
             ></textarea>
           </label>
-          <input
-            type="submit"
-            value="Send"
-            class="px-4 py-2 mt-4 text-white transition-all duration-150 ease-in-out rounded-md bg-blue sm:px-6 hover:cursor-pointer hover:font-semibold hover:bg-blue/90"
-          />
+          <PrimareButton class="mt-2 text-white hover:bg-blue/90 bg-blue"
+            >Wyślij</PrimareButton
+          >
         </form>
       </div>
     </div>
@@ -52,11 +50,14 @@
 </template>
 <script>
 import ContactImage from '@/assets/images/contact.png';
+import PrimareButton from '@/components/UI/PrimareButton.vue';
 export default {
   name: 'Contact',
+  components: { PrimareButton },
   data() {
     return {
       ContactImage,
+      PrimareButton,
     };
   },
 };
