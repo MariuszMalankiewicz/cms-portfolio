@@ -46,7 +46,7 @@
           >
           <PrimareButton class="text-white bg-gray-300 hover:bg-gray-400/80">
             <a
-              href="/frontend/src/assets/files/Mariusz Malankiewicz CV.pdf"
+              href="/frontend-dist/Mariusz Malankiewicz CV.pdf"
               download
               >Pobierz CV</a
             >
