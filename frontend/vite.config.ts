@@ -9,7 +9,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: '/frontend-dist/',
+  // base: '/frontend-dist/',
   build: {
     outDir: '../backend/public/frontend-dist',
     emptyOutDir: true,

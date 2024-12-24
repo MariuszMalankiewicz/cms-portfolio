@@ -15,7 +15,7 @@
         :href="project.live"
         target="_blank"
         class="px-4 py-2 mt-4 mr-4 text-white rounded-md bg-blue/90"
-        >Live</a
+        >Demo</a
       >
       <a
         :href="project.github"
