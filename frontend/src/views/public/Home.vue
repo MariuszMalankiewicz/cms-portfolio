@@ -10,20 +10,14 @@
       />
       <div>
         <div class="mt-12 max-w-[350px] lg:max-w-[400px] 2xl:max-w-[450px]">
-          <h3
-            class="font-semibold text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px]"
-          >
-            Cześć, nazywam się
-            <p
-              class="font-bold text-[20px] lg:text-[22px] xl:text-[24px] 2xl:text-[26px]"
-            >
-              Mariusz Malankiewicz
-            </p>
-          </h3>
+          <p class="text-[22px] sm:text-[28px] font-bold">Cześć!</p>
+          <p class="text-[18px] sm:text-[21px]">
+            Nazywam się <span class="font-bold">Mariusz Malankiewicz</span>
+          </p>
           <p
-            class="text-[16px] lg:text-[18px] leading-[28px] lg:leading-[32px]"
+            class="text-[16px] lg:text-[18px] leading-[28px] lg:leading-[32px] text-justify"
           >
-            i jestem web developerem z pasją do tworzenia funkcjonalnych,
+            Jestem web developerem z pasją do tworzenia funkcjonalnych,
             nowoczesnych i estetycznych stron internetowych oraz aplikacji
             webowych. Mam doświadczenie zarówno w front-endzie, jak i
             back-endzie oraz bazach danych.
@@ -45,9 +39,7 @@
             ></router-link
           >
           <PrimareButton class="text-white bg-gray-300 hover:bg-gray-400/80">
-            <a
-              href="/frontend-dist/Mariusz Malankiewicz CV.pdf"
-              download
+            <a href="/frontend-dist/Mariusz Malankiewicz CV.pdf" download
               >Pobierz CV</a
             >
           </PrimareButton>

@@ -1,0 +1,1 @@
+import{_ as e,o,c as r,e as n}from"./index-DLsstOZw.js";const s={name:"PrimareButton"},a={class:"px-4 py-2 text-[14px] lg:text-[16px] transition-all duration-150 ease-in-out rounded-md sm:px-6 hover:cursor-pointer"};function c(t,p,i,u,d,l){return o(),r("button",a,[n(t.$slots,"default")])}const m=e(s,[["render",c]]);export{m as P};
