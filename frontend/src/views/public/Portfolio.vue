@@ -130,7 +130,7 @@ export default {
           live: '#',
           github:
             'https://github.com/MariuszMalankiewicz/link-shortener',
-          category: 'backend',
+          category: 'fullstack',
         },
         {
           imageSrc: TaskManagmentSystem,
