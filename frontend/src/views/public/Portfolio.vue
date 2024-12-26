@@ -47,7 +47,7 @@
         Full-Stack
       </NavPortfolioCard>
     </nav>
-    <div class="flex flex-wrap items-center justify-center gap-12 mt-12">
+    <div class="flex flex-wrap items-start justify-center gap-12 mt-12">
       <PortfolioCard
         v-for="(project, index) in filteredProjects"
         :key="index"
@@ -62,8 +62,10 @@ import NavPortfolioCard from '@/components/UI/NavPortfolioCard.vue';
 import PortfolioCard from '@/components/UI/PortfolioCard.vue';
 
 import Portfolio from '@/assets/images/projects/portfolio.png';
+import ApiForLendingBooks from '@/assets/images/projects/api_for_lending_books.png';
 import MMBlog from '@/assets/images/projects/mmblog.png';
 import CarsSpot from '@/assets/images/projects/cars-spot.png';
+import LinkShortener from '@/assets/images/projects/link_shortener.png';
 import TaskManagmentSystem from '@/assets/images/projects/task-managment-system.png';
 import MemoryGame from '@/assets/images/projects/memory-game.png';
 import RockScissorsPaper from '@/assets/images/projects/rock-scissors-paper.png';
@@ -90,9 +92,20 @@ export default {
           category: 'fullstack',
         },
         {
+          imageSrc: ApiForLendingBooks,
+          title: 'Restful API Do Wypożyczania Książek',
+          technology: 'Laravel, MySql, SQLite',
+          description:
+            'API umożliwia zarządzanie klientami, a także obsługę wypożyczania i zwrotu książek. Zwraca listę książek podzieloną na 20 pozycji na stronę, opcjonalnie parametr search pozwala znaleźć książkę po nazwie, autorze, imieniu lub nazwisku klienta. Dodano również mechanizm seeder, który świetnie ładuje bazę danych danymi, a także  testy, by w przyszłości uniknąć błędów przy rozbudowie API.',
+          live: '#',
+          github: 'https://github.com/MariuszMalankiewicz/simple-api-for-lending-books',
+          category: 'backend',
+        },
+        {
           imageSrc: MMBlog,
           title: 'Aplikacja Blogowa',
-          technology:
+          technology: '',
+          description:
             'Jest oparta na frameworku Laravel, systemie szablonów Blade oraz bazie danych MySQL, pozwala użytkownikom na tworzenie, edytowanie, usuwanie i przeglądanie postów. Umożliwia logowanie, komentowanie, a także przeglądanie archiwum, kategorii i tagów. Całość wykorzystuje nowoczesne funkcjonalności Laravel, takie jak middleware, kontrolery, validacja danych i zarządzanie sesjami. MySQL przechowuje dane o użytkownikach, postach, komentarzach i innych istotnych elementach aplikacji. Projekt ma na celu stworzenie intuicyjnego narzędzia do zarządzania treściami blogowymi, które można łatwo rozwijać o nowe funkcje.',
           live: '#',
           github: 'https://github.com/MariuszMalankiewicz/MMBlog',
@@ -107,6 +120,17 @@ export default {
           live: 'https://cars-spott.netlify.app/',
           github: 'https://github.com/MariuszMalankiewicz/cars-spot',
           category: 'frontend',
+        },
+        {
+          imageSrc: LinkShortener,
+          title: 'Aplikacja Do Skracania Linków',
+          technology: 'Laravel, Vue.js, Tailwind Css, MySQL',
+          description:
+            'Aplikacja do skracania linków, która umożliwia użytkownikom tworzenie skróconych, łatwych do zapamiętania linków, podobnie jak popularne usługi takie jak Bit.ly. Aplikacja jest budowana przy użyciu frameworka Laravel w back-endzie i Vue.js w front-endzie, zapewniając dynamiczny i responsywny interfejs użytkownika.',
+          live: '#',
+          github:
+            'https://github.com/MariuszMalankiewicz/link-shortener',
+          category: 'backend',
         },
         {
           imageSrc: TaskManagmentSystem,
