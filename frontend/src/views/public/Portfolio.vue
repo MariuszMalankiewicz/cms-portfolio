@@ -47,7 +47,7 @@
         Full-Stack
       </NavPortfolioCard>
     </nav>
-    <div class="flex flex-wrap items-start justify-center gap-12 mt-12">
+    <div class="flex flex-wrap justify-center items-start mt-12 gap-x-[2%] gap-y-4">
       <PortfolioCard
         v-for="(project, index) in filteredProjects"
         :key="index"

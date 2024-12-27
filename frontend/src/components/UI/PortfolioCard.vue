@@ -1,6 +1,6 @@
 <template>
   <div
-    class="border-[1.5px] max-w-[360px] sm:max-w-[420px] text-start transition-all duration-300 ease-in-out"
+    class="border-[1.5px] max-w-[480px] text-start transition-all duration-300 ease-in-out"
   >
     <img :src="project.imageSrc" alt="Card Image" />
     <h3 class="px-4 pt-6 pb-2 font-bold text-[19px] sm:text-[24px]">
