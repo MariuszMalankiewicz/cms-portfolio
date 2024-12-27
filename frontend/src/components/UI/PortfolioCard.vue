@@ -6,6 +6,9 @@
     <h3 class="px-4 pt-6 pb-2 font-bold text-[19px] sm:text-[24px]">
       {{ project.title }}
     </h3>
+    <p class="pl-4 leading-[26px] text-[13px] sm:text-[14px] font-semibold">
+      {{ project.year }}
+    </p>
     <p class="px-4 pb-2 leading-[26px] text-[13px] sm:text-[14px]">
       {{ project.technology }}
     </p>

@@ -47,7 +47,9 @@
         Full-Stack
       </NavPortfolioCard>
     </nav>
-    <div class="flex flex-wrap justify-center items-start mt-12 gap-x-[2%] gap-y-4">
+    <div
+      class="flex flex-wrap justify-center items-start mt-12 gap-x-[2%] gap-y-4"
+    >
       <PortfolioCard
         v-for="(project, index) in filteredProjects"
         :key="index"
@@ -84,6 +86,7 @@ export default {
         {
           imageSrc: Portfolio,
           title: 'CMS Portfolio',
+          year: 2024,
           technology: 'Laravel, Vue.js, Tailwind, MySQL',
           description:
             'To system zarządzania treścią (CMS) zaprojektowany do tworzenia i administrowania portfolio. API backend umożliwia zarządzanie projektami, dodawanie, edycję i usuwanie danych, takich jak opisy projektów, zdjęcia, tagi czy metadane. Aplikacja integruje frontend w Vue.js z backendem w Laravel, zapewniając płynne zarządzanie treścią portfolio oraz dynamiczne generowanie widoków dla użytkowników. Dzięki wykorzystaniu Tailwind CSS i Vite, strona charakteryzuje się nowoczesnym wyglądem oraz szybkim ładowaniem. Całość jest dostosowana do CI/CD, co ułatwia wdrażanie aktualizacji i rozwój projektu.',
@@ -93,17 +96,20 @@ export default {
         },
         {
           imageSrc: ApiForLendingBooks,
-          title: 'Restful API Do Wypożyczania Książek',
+          title: 'Restful API do wypożyczania książek',
+          year: 2024,
           technology: 'Laravel, MySql, SQLite',
           description:
             'API umożliwia zarządzanie klientami, a także obsługę wypożyczania i zwrotu książek. Zwraca listę książek podzieloną na 20 pozycji na stronę, opcjonalnie parametr search pozwala znaleźć książkę po nazwie, autorze, imieniu lub nazwisku klienta. Dodano również mechanizm seeder, który świetnie ładuje bazę danych danymi, a także  testy, by w przyszłości uniknąć błędów przy rozbudowie API.',
           live: '#',
-          github: 'https://github.com/MariuszMalankiewicz/simple-api-for-lending-books',
+          github:
+            'https://github.com/MariuszMalankiewicz/simple-api-for-lending-books',
           category: 'backend',
         },
         {
           imageSrc: MMBlog,
-          title: 'Aplikacja Blogowa',
+          year: 2023,
+          title: 'Aplikacja blogowa',
           technology: '',
           description:
             'Jest oparta na frameworku Laravel, systemie szablonów Blade oraz bazie danych MySQL, pozwala użytkownikom na tworzenie, edytowanie, usuwanie i przeglądanie postów. Umożliwia logowanie, komentowanie, a także przeglądanie archiwum, kategorii i tagów. Całość wykorzystuje nowoczesne funkcjonalności Laravel, takie jak middleware, kontrolery, validacja danych i zarządzanie sesjami. MySQL przechowuje dane o użytkownikach, postach, komentarzach i innych istotnych elementach aplikacji. Projekt ma na celu stworzenie intuicyjnego narzędzia do zarządzania treściami blogowymi, które można łatwo rozwijać o nowe funkcje.',
@@ -113,7 +119,8 @@ export default {
         },
         {
           imageSrc: CarsSpot,
-          title: 'Aplikacja do sprzedaży samochodów',
+          title: 'Strona internetowa do sprzedaży samochodów',
+          year: 2024,
           technology: 'Vue.js, Tailwind',
           description:
             'To aplikacja webowa, której celem jest umożliwienie użytkownikom przeglądania, wyszukiwania i zakupu samochodów w sposób intuicyjny i nowoczesny. Frontend projektu oparty jest na Vue.js, co zapewnia dynamiczne i responsywne doświadczenie użytkownika. Do projektowania interfejsu wykorzystano Tailwind CSS, co umożliwia szybkie tworzenie atrakcyjnych i zgodnych z nowoczesnymi standardami layoutów.',
@@ -123,18 +130,19 @@ export default {
         },
         {
           imageSrc: LinkShortener,
-          title: 'Aplikacja Do Skracania Linków',
+          title: 'Aplikacja do skracania linków',
+          year: 2024,
           technology: 'Laravel, Vue.js, Tailwind Css, MySQL',
           description:
             'Aplikacja do skracania linków, która umożliwia użytkownikom tworzenie skróconych, łatwych do zapamiętania linków, podobnie jak popularne usługi takie jak Bit.ly. Aplikacja jest budowana przy użyciu frameworka Laravel w back-endzie i Vue.js w front-endzie, zapewniając dynamiczny i responsywny interfejs użytkownika.',
           live: '#',
-          github:
-            'https://github.com/MariuszMalankiewicz/link-shortener',
+          github: 'https://github.com/MariuszMalankiewicz/link-shortener',
           category: 'fullstack',
         },
         {
           imageSrc: TaskManagmentSystem,
           title: 'Restful API do zarzadzania zadaniami',
+          year: 2024,
           technology: 'Laravel',
           description:
             'API służy do zarządzania listą zadań w aplikacji typu "to-do". Umożliwia użytkownikom tworzenie, odczytywanie, edytowanie i usuwanie zadań (CRUD). API jest zgodne z zasadami REST i może być wykorzystywane w aplikacjach frontendowych lub mobilnych.',
@@ -145,7 +153,8 @@ export default {
         },
         {
           imageSrc: MemoryGame,
-          title: 'Gra W Zapamiętywanie',
+          title: 'Gra w zapamiętywanie',
+          year: 2022,
           technology: 'JavaScript, CSS3, HTML5',
           description:
             'To interaktywna aplikacja, która pomaga ćwiczyć pamięć i koncentrację. Gracz musi zapamiętać położenie obrazków lub par symboli, które losowo pojawiają się na planszy, a następnie dopasować je w jak najkrótszym czasie. Gra oferuje różne poziomy trudności, ranking najlepszych wyników oraz możliwość rywalizacji z innymi graczami. To świetna zabawa dla osób w każdym wieku, która jednocześnie rozwija zdolności poznawcze.',
@@ -155,7 +164,8 @@ export default {
         },
         {
           imageSrc: RockScissorsPaper,
-          title: 'Gra W Kamień, Papier i Nożyczki',
+          title: 'Gra w kamień, papier i nożyczki',
+          year: 2022,
           technology: 'JavaScript, CSS3, HTML5',
           description:
             'Projekt jest prostą grą w klasycznego "Kamień, Papier, Nożyce", napisaną w językach HTML, CSS i JavaScript. Gra pozwala użytkownikowi grać przeciwko komputerowi. Użytkownik wybiera jedną z trzech opcji (kamień, papier, nożyce), a komputer losowo wybiera swój ruch. Następnie program sprawdza wyniki obu wyborów i informuje, kto wygrał dany pojedynek.',
@@ -165,7 +175,8 @@ export default {
         },
         {
           imageSrc: ToDoList,
-          title: 'Aplikacja Listy Do Zrobienia',
+          title: 'Aplikacja listy do zrobienia',
+          year: 2022,
           technology: 'JavaScript, CSS3, HTML5',
           description:
             'To prosta i funkcjonalna aplikacja webowa stworzona w HTML, CSS i JavaScript, której głównym celem jest umożliwienie użytkownikom tworzenia, zarządzania i śledzenia listy zadań do wykonania.',
@@ -175,7 +186,8 @@ export default {
         },
         {
           imageSrc: TreeStructure,
-          title: 'Aplikacja Struktury Drzewiastej',
+          title: 'Aplikacja struktury drzewiastej',
+          year: 2023,
           technology: 'Laravel, Blade',
           description:
             'To system umożliwiający tworzenie i zarządzanie hierarchicznymi strukturami danych. Projekt opiera się na frameworku Laravel i wykorzystuje szablon Blade do generowania dynamicznych widoków. Głównym celem jest umożliwienie użytkownikom tworzenia, edytowania i zarządzania strukturami drzewiastymi, takimi jak kategorie, struktura menu, organizacje, lub inne złożone hierarchie danych.',
