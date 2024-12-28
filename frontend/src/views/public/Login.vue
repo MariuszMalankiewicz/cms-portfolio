@@ -37,7 +37,11 @@
         </form>
         <p class="mt-6 text-gray-800 lg:mt-4 lg:text-white">
           Nie pamiętasz hasła?
-          <a href="/#" class="font-bold underline text-dark-blue lg:text-white lg:hover:text-white/90">Odzyskaj je</a>
+          <a
+            href="/#"
+            class="font-bold underline text-dark-blue lg:text-white lg:hover:text-white/90"
+            >Odzyskaj je</a
+          >
         </p>
       </div>
     </div>

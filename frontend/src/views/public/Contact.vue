@@ -40,7 +40,8 @@
               rows="5"
             ></textarea>
           </label>
-          <PrimareButton class="mt-2 text-white hover:bg-dark-blue/90 bg-dark-blue"
+          <PrimareButton
+            class="mt-2 text-white hover:bg-dark-blue/90 bg-dark-blue"
             >Wyślij</PrimareButton
           >
         </form>

@@ -20,11 +20,57 @@
       <ul
         class="flex flex-col items-center justify-around h-[80%] font-semibold text-[20px]"
       >
-        <router-link to="/">Strona Główna</router-link>
-        <router-link to="/about">O Mnie</router-link>
-        <router-link to="/portfolio">Portfolio</router-link>
-        <router-link to="/contact">Kontakt</router-link>
-        <router-link to="/login"> Zaloguj się </router-link>
+        <router-link
+          class="transition-all duration-150 ease-in-out"
+          to="/"
+          :class="[
+            $route.path === '/'
+              ? 'border-b-[2px] border-dark-blue'
+              : 'text-black bg-white',
+          ]"
+          >Strona Główna</router-link
+        >
+        <router-link
+          class="transition-all duration-150 ease-in-out"
+          to="/about"
+          :class="[
+            $route.path === '/about'
+              ? 'border-b-[2px] border-dark-blue'
+              : 'text-black bg-white',
+          ]"
+          >O Mnie</router-link
+        >
+        <router-link
+          class="transition-all duration-150 ease-in-out"
+          to="/portfolio"
+          :class="[
+            $route.path === '/portfolio'
+              ? 'border-b-[2px] border-dark-blue'
+              : 'text-black bg-white',
+          ]"
+          >Portfolio</router-link
+        >
+        <router-link
+          class="transition-all duration-150 ease-in-out"
+          to="/contact"
+          :class="[
+            $route.path === '/contact'
+              ? 'border-b-[2px] border-dark-blue'
+              : 'text-black bg-white',
+          ]"
+          >Kontakt</router-link
+        >
+        <router-link
+          class="transition-all duration-150 ease-in-out"
+          to="/login"
+          :class="[
+            $route.path === '/login'
+              ? 'border-b-[2px] border-dark-blue'
+              : 'text-black bg-white',
+          ]"
+        >
+          Zaloguj się
+        </router-link>
       </ul>
     </div>
   </nav>
@@ -32,11 +78,57 @@
   <!-- Desktop -->
   <nav class="hidden w-full lg:block">
     <ul class="flex justify-end space-x-12 font-semibold">
-      <router-link to="/">Strona Główna</router-link>
-      <router-link to="/about">O Mnie</router-link>
-      <router-link to="/portfolio">Portfolio</router-link>
-      <router-link to="/contact">Kontakt</router-link>
-      <router-link to="/login"> Zaloguj się </router-link>
+      <router-link
+        class="transition-all duration-150 ease-in-out"
+        to="/"
+        :class="[
+          $route.path === '/'
+            ? 'border-b-[2px] border-dark-blue'
+            : 'text-black bg-white',
+        ]"
+        >Strona Główna</router-link
+      >
+      <router-link
+        class="transition-all duration-150 ease-in-out"
+        to="/about"
+        :class="[
+          $route.path === '/about'
+            ? 'border-b-[2px] border-dark-blue'
+            : 'text-black bg-white',
+        ]"
+        >O Mnie</router-link
+      >
+      <router-link
+        class="transition-all duration-150 ease-in-out"
+        to="/portfolio"
+        :class="[
+          $route.path === '/portfolio'
+            ? 'border-b-[2px] border-dark-blue'
+            : 'text-black bg-white',
+        ]"
+        >Portfolio</router-link
+      >
+      <router-link
+        class="transition-all duration-150 ease-in-out"
+        to="/contact"
+        :class="[
+          $route.path === '/contact'
+            ? 'border-b-[2px] border-dark-blue'
+            : 'text-black bg-white',
+        ]"
+        >Kontakt</router-link
+      >
+      <router-link
+        class="transition-all duration-150 ease-in-out"
+        to="/login"
+        :class="[
+          $route.path === '/login'
+            ? 'border-b-[2px] border-dark-blue'
+            : 'text-black bg-white',
+        ]"
+      >
+        Zaloguj się
+      </router-link>
     </ul>
   </nav>
 </template>

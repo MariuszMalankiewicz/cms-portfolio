@@ -37,7 +37,8 @@
           class="flex flex-wrap justify-start items-center gap-[20px] mt-6 text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] mb-12"
         >
           <router-link to="/portfolio"
-            ><PrimareButton class="text-white hover:bg-dark-blue/90 bg-dark-blue"
+            ><PrimareButton
+              class="text-white hover:bg-dark-blue/90 bg-dark-blue"
               >Zobacz Projekty</PrimareButton
             ></router-link
           >
