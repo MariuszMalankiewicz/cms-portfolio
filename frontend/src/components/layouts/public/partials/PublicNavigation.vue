@@ -5,17 +5,17 @@
       :src="barsStaggeredSolid"
       class="w-8 mr-4 cursor-pointer"
       alt="bars-staggered-solid"
-      @click="changeStatus"
+      @click="toggleMenu"
     />
     <div
-      :class="[status ? 'absolute' : 'hidden']"
+      :class="[menuOpen ? 'absolute' : 'hidden']"
       class="top-0 left-0 w-full h-screen bg-white"
     >
       <img
         :src="XMark"
         alt="xmark-solid"
         class="w-8 mt-8 ml-auto mr-12 cursor-pointer"
-        @click="changeStatus"
+        @click="toggleMenu"
       />
       <ul
         class="flex flex-col items-center justify-around h-[80%] font-semibold text-[20px]"
@@ -28,6 +28,7 @@
               ? 'border-b-[2px] border-dark-blue'
               : 'text-black bg-white',
           ]"
+          @click.native="closeMenu"
           >Strona Główna</router-link
         >
         <router-link
@@ -38,6 +39,7 @@
               ? 'border-b-[2px] border-dark-blue'
               : 'text-black bg-white',
           ]"
+          @click.native="closeMenu"
           >O Mnie</router-link
         >
         <router-link
@@ -48,6 +50,7 @@
               ? 'border-b-[2px] border-dark-blue'
               : 'text-black bg-white',
           ]"
+          @click.native="closeMenu"
           >Portfolio</router-link
         >
         <router-link
@@ -58,6 +61,7 @@
               ? 'border-b-[2px] border-dark-blue'
               : 'text-black bg-white',
           ]"
+          @click.native="closeMenu"
           >Kontakt</router-link
         >
         <router-link
@@ -68,6 +72,7 @@
               ? 'border-b-[2px] border-dark-blue'
               : 'text-black bg-white',
           ]"
+          @click.native="closeMenu"
         >
           Zaloguj się
         </router-link>
@@ -142,12 +147,15 @@ export default {
     return {
       barsStaggeredSolid,
       XMark,
-      status: false,
+      menuOpen: false,
     };
   },
   methods: {
-    changeStatus() {
-      this.status = !this.status;
+    toggleMenu() {
+      this.menuOpen = !this.menuOpen;
+    },
+    closeMenu() {
+      this.menuOpen = false;
     },
   },
 };

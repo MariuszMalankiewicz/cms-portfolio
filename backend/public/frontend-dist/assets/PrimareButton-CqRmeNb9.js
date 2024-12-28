@@ -1,0 +1,1 @@
+import{_ as o,o as e,c as n,e as r}from"./index-BSgiXHjc.js";const s={name:"PrimareButton"},a={class:"px-4 py-2 text-[14px] lg:text-[16px] transition-all duration-150 ease-in-out rounded-md sm:px-6 hover:cursor-pointer"};function c(t,p,i,u,d,l){return e(),n("button",a,[r(t.$slots,"default")])}const m=o(s,[["render",c]]);export{m as L};
