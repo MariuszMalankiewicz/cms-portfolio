@@ -8,7 +8,7 @@
     >
       <img :src="LoginImage" alt="login image" class="w-full" />
     </div>
-    <div class="w-full pb-8 bg-white lg:w-1/2 lg:bg-blue">
+    <div class="w-full pb-8 bg-white lg:w-1/2 lg:bg-dark-blue">
       <div class="w-[75%] mx-auto">
         <h1
           class="text-black lg:text-white text-[28px] sm:text-[30px] lg:text-[40px] xl:text-[46px] font-bold text-start pt-6 lg:pt-12"
@@ -31,13 +31,13 @@
             class="w-full block py-1.5 px-4 mt-6 lg:rounded-2xl border-b-[2px]"
           />
           <LoginButton
-            class="block mt-6 py-2 px-4 text-white lg:text-black bg-blue lg:bg-white w-[120px] cursor-pointer text-center rounded-2xl font-semibold"
+            class="block mt-6 py-2 px-4 text-white lg:text-black bg-dark-blue lg:bg-white lg:hover:bg-white/80 w-[120px] cursor-pointer text-center rounded-2xl font-semibold"
             >Zaloguj się</LoginButton
           >
         </form>
         <p class="mt-6 text-gray-800 lg:mt-4 lg:text-white">
           Nie pamiętasz hasła?
-          <a href="/#" class="font-bold underline text-blue">Odzyskaj je</a>
+          <a href="/#" class="font-bold underline text-dark-blue lg:text-white lg:hover:text-white/90">Odzyskaj je</a>
         </p>
       </div>
     </div>

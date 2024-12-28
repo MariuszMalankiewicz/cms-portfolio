@@ -17,7 +17,7 @@
       <a
         :href="project.live"
         target="_blank"
-        class="px-4 py-2 mt-4 mr-4 text-white rounded-md bg-blue/90"
+        class="px-4 py-2 mt-4 mr-4 text-white rounded-md bg-dark-blue/90"
         >Demo</a
       >
       <a

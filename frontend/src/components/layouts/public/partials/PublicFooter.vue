@@ -1,7 +1,7 @@
 <template>
   <img :src="WaveUp" class="bg-white" alt="" />
   <section
-    class="flex flex-col items-center w-full py-10 text-white font-Montserrat bg-blue sm:py-12 md:py-14 lg:py-16 xl:py-18 2xl:py-20"
+    class="flex flex-col items-center w-full py-10 text-white font-Montserrat bg-dark-blue sm:py-12 md:py-14 lg:py-16 xl:py-18 2xl:py-20"
   >
     <div
       class="flex flex-wrap items-center justify-center space-x-4 sm:space-x-6 md:space-x-8 lg:space-x-10 xl:space-x-12 2xl:space-x-14 text-[16px] sm:text-[18px] lg:text-[20px]"
@@ -34,7 +34,7 @@
         class="p-2 bg-white rounded-full"
         ><img
           :src="LinkedinIcons"
-          class="w-8 text-blue"
+          class="w-8 text-dark-blue"
           alt="linkedin-brands-solid"
         />
       </a>

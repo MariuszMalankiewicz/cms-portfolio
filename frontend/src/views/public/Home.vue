@@ -26,7 +26,7 @@
             back-endzie oraz bazach danych.
             <router-link to="/about"
               ><p
-                class="underline transition-all duration-150 ease-in-out text-blue hover:text-blue/70"
+                class="underline transition-all duration-150 ease-in-out text-dark-blue hover:text-dark-blue/70"
               >
                 czytaj wiecej
               </p></router-link
@@ -37,7 +37,7 @@
           class="flex flex-wrap justify-start items-center gap-[20px] mt-6 text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] mb-12"
         >
           <router-link to="/portfolio"
-            ><PrimareButton class="text-white hover:bg-blue/90 bg-blue"
+            ><PrimareButton class="text-white hover:bg-dark-blue/90 bg-dark-blue"
               >Zobacz Projekty</PrimareButton
             ></router-link
           >

@@ -1,6 +1,6 @@
 <template>
   <section class="px-4 mt-[32px] font-Montserrat pt-32">
-    <h1 class="text-[32px] sm:text-[36px] text-center font-bold text-blue">
+    <h1 class="text-[32px] sm:text-[36px] text-center font-bold text-dark-blue">
       O Mnie
     </h1>
     <div class="flex flex-col items-center justify-center">

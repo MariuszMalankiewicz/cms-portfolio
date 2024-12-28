@@ -1,7 +1,7 @@
 <template>
   <section class="px-4 mt-[80px] font-Montserrat mb-12 pt-32">
     <h1
-      class="text-[32px] sm:text-[44px] md:text-[52px] text-center font-bold text-blue"
+      class="text-[32px] sm:text-[44px] md:text-[52px] text-center font-bold text-dark-blue"
     >
       Portfolio
     </h1>
@@ -9,7 +9,7 @@
       <NavPortfolioCard
         :class="[
           selectedCategory === null
-            ? 'text-white bg-blue'
+            ? 'text-white bg-dark-blue'
             : 'text-gray-600 bg-white',
         ]"
         @click="filterByCategory(null)"
@@ -19,7 +19,7 @@
       <NavPortfolioCard
         :class="[
           selectedCategory === 'frontend'
-            ? 'text-white bg-blue'
+            ? 'text-white bg-dark-blue'
             : 'text-gray-600 bg-white',
         ]"
         @click="filterByCategory('frontend')"
@@ -29,7 +29,7 @@
       <NavPortfolioCard
         :class="[
           selectedCategory === 'backend'
-            ? 'text-white bg-blue'
+            ? 'text-white bg-dark-blue'
             : 'text-gray-600 bg-white',
         ]"
         @click="filterByCategory('backend')"
@@ -39,7 +39,7 @@
       <NavPortfolioCard
         :class="[
           selectedCategory === 'fullstack'
-            ? 'text-white bg-blue'
+            ? 'text-white bg-dark-blue'
             : 'text-gray-600 bg-white',
         ]"
         @click="filterByCategory('fullstack')"
