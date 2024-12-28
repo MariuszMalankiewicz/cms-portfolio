@@ -1,0 +1,58 @@
+<template>
+  <section class="pt-24"></section>
+  <div
+    class="lg:shadow-2xl w-full lg:w-[90%] xl:w-[1200px] lg:h-[500px] xl:h-[600px] mx-auto mt-12 lg:mt-24 md:mb-[70px] lg:mb-12 flex lg:flex-row flex-col items-center lg:items-stretch"
+  >
+    <div
+      class="flex items-center justify-center w-[80%] md:max-w-[500px] lg:max-w-[100%] lg:w-1/2"
+    >
+      <img :src="LoginImage" alt="login image" class="w-full" />
+    </div>
+    <div class="w-full pb-8 bg-white lg:w-1/2 lg:bg-blue">
+      <div class="w-[75%] mx-auto">
+        <h1
+          class="text-black lg:text-white text-[28px] sm:text-[30px] lg:text-[40px] xl:text-[46px] font-bold text-start pt-6 lg:pt-12"
+        >
+          Zaloguj się!
+        </h1>
+        <form action="#">
+          <input
+            id="login"
+            type="text"
+            name="login"
+            placeholder="Twój login"
+            class="w-full block py-1.5 px-4 mt-6 lg:rounded-2xl border-b-[2px]"
+          />
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Twoje hasło"
+            class="w-full block py-1.5 px-4 mt-6 lg:rounded-2xl border-b-[2px]"
+          />
+          <LoginButton
+            class="block mt-6 py-2 px-4 text-white lg:text-black bg-blue lg:bg-white w-[120px] cursor-pointer text-center rounded-2xl font-semibold"
+            >Zaloguj się</LoginButton
+          >
+        </form>
+        <p class="mt-6 text-gray-800 lg:mt-4 lg:text-white">
+          Nie pamiętasz hasła?
+          <a href="/#" class="font-bold underline text-blue">Odzyskaj je</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import LoginImage from '@/assets/images/Tablet login-rafiki.png';
+import LoginButton from '@/components/UI/PrimareButton.vue';
+export default {
+  name: 'Login',
+  data() {
+    return {
+      LoginImage,
+      LoginButton,
+    };
+  },
+};
+</script>
