@@ -15,24 +15,30 @@
         >
           Zaloguj się!
         </h1>
-        <form action="#">
+        <form @submit.prevent="login">
           <input
-            id="login"
-            type="text"
-            name="login"
-            placeholder="Twój login"
+            id="email"
+            v-model="email"
+            type="email"
+            name="email"
+            placeholder="Twój email"
+            required
             class="w-full block py-1.5 px-4 mt-6 lg:rounded-2xl border-b-[2px]"
           />
           <input
             id="password"
+            v-model="password"
             type="password"
             name="password"
             placeholder="Twoje hasło"
+            required
             class="w-full block py-1.5 px-4 mt-6 lg:rounded-2xl border-b-[2px]"
           />
-          <LoginButton
-            class="block mt-6 py-2 px-4 text-white lg:text-black bg-dark-blue lg:bg-white lg:hover:bg-white/80 w-[120px] cursor-pointer text-center rounded-2xl font-semibold"
-            >Zaloguj się</LoginButton
+          <p class="mt-3 font-bold text-red-600">{{ error }}</p>
+          <PrimareButton
+            type="submit"
+            class="block mt-6 font-semibold text-center text-white cursor-pointer lg:text-black bg-dark-blue lg:bg-white lg:hover:bg-white/80 rounded-2xl"
+            >Zaloguj się</PrimareButton
           >
         </form>
         <p class="mt-6 text-gray-800 lg:mt-4 lg:text-white">
@@ -49,14 +55,34 @@
 </template>
 <script>
 import LoginImage from '@/assets/images/Tablet login-rafiki.png';
-import LoginButton from '@/components/UI/PrimareButton.vue';
+import PrimareButton from '@/components/UI/PrimareButton.vue';
+import apiClient from '@/services/api.js';
+
 export default {
   name: 'Login',
+  components: { PrimareButton },
   data() {
     return {
       LoginImage,
-      LoginButton,
+      PrimareButton,
+      email: '',
+      password: '',
+      error: '',
     };
+  },
+  methods: {
+    async login() {
+      try {
+        const response = await apiClient.post('/auth/login', {
+          email: this.email,
+          password: this.password,
+        });
+        localStorage.setItem('token', response.data.access_token);
+        this.$router.push('/');
+      } catch (error) {
+        this.error = 'Niepoprawne dane';
+      }
+    },
   },
 };
 </script>
