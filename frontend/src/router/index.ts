@@ -17,7 +17,7 @@ const routes = [
     path: '/admin',
     component: AdminLayout,
     children: [
-      { path: '', name: 'Dashboard', component: () => import('@/views/admin/Dashboard.vue') },
+      { path: '', name: 'Kokpit', component: () => import('@/views/admin/Dashboard.vue') },
     ],
   }
 ];

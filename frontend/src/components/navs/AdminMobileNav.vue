@@ -1,9 +1,8 @@
 <template>
-  <!-- mobile -->
   <aside class="lg:hidden">
     <img
       :src="barsStaggeredSolid"
-      class="w-8 mt-4 ml-auto mr-6 cursor-pointer"
+      class="w-8 cursor-pointer"
       alt="bars-staggered-solid"
       @click="toggleMenu"
     />

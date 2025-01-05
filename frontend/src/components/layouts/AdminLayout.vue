@@ -1,13 +1,15 @@
 <template>
-  <AdminSideNav></AdminSideNav>
+  <AdminHeader />
   <main>
     <router-view />
   </main>
 </template>
 <script>
-import AdminSideNav from '@/components/navs/AdminSideNav.vue';
+import AdminHeader from '@/components/headers/AdminHeader.vue';
 export default {
   name: 'AdminLayout',
-  components: { AdminSideNav },
+  components: {
+    AdminHeader,
+  },
 };
 </script>

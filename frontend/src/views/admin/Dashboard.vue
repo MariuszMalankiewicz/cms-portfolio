@@ -1,5 +1,5 @@
 <template>
-  <h1>Kokpit</h1>
+  <div class="w-full h-[100vh] bg-gray-600"></div>
 </template>
 <script>
 export default {
