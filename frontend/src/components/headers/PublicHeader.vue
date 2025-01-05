@@ -5,17 +5,20 @@
         <p class="text-[16px]">Web Developer</p>
         <h2 class="font-semibold text-[18px]">Mariusz Malankiewicz</h2>
       </div>
+      <PublicMobileNav />
       <PublicTopNav />
     </div>
   </header>
 </template>
 
 <script>
+import PublicMobileNav from '@/components/navs/PublicMobileNav.vue';
 import PublicTopNav from '@/components/navs/PublicTopNav.vue';
 export default {
   name: 'PublicHeader',
   components: {
     PublicTopNav,
+    PublicMobileNav,
   },
 };
 </script>

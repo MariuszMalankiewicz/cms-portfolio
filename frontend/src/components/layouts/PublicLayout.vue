@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  <PublicHeader />
   <main>
     <router-view />
   </main>
@@ -7,13 +7,13 @@
 </template>
 
 <script>
+import PublicHeader from '@/components/headers/PublicHeader.vue';
 import PublicFooter from '@/components/footers/PublicFooter.vue';
-import Header from '@/components/headers/Header.vue';
 
 export default {
-  name: 'PublicLayout',
+  name: 'PublicMobileNav',
   components: {
-    Header,
+    PublicHeader,
     PublicFooter,
   },
 };
