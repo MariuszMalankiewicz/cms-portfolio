@@ -3,10 +3,10 @@
     <h1
       class="text-[32px] sm:text-[44px] md:text-[52px] text-center font-bold text-dark-blue"
     >
-      Portfolio
+      Projekty
     </h1>
     <nav class="flex flex-wrap items-center justify-center gap-3 mt-12">
-      <NavPortfolioCard
+      <ProjectNav
         :class="[
           selectedCategory === null
             ? 'text-white bg-dark-blue'
@@ -15,8 +15,8 @@
         @click="filterByCategory(null)"
       >
         Wszystkie
-      </NavPortfolioCard>
-      <NavPortfolioCard
+      </ProjectNav>
+      <ProjectNav
         :class="[
           selectedCategory === 'frontend'
             ? 'text-white bg-dark-blue'
@@ -25,8 +25,8 @@
         @click="filterByCategory('frontend')"
       >
         Front-End
-      </NavPortfolioCard>
-      <NavPortfolioCard
+      </ProjectNav>
+      <ProjectNav
         :class="[
           selectedCategory === 'backend'
             ? 'text-white bg-dark-blue'
@@ -35,8 +35,8 @@
         @click="filterByCategory('backend')"
       >
         Back-End
-      </NavPortfolioCard>
-      <NavPortfolioCard
+      </ProjectNav>
+      <ProjectNav
         :class="[
           selectedCategory === 'fullstack'
             ? 'text-white bg-dark-blue'
@@ -45,23 +45,23 @@
         @click="filterByCategory('fullstack')"
       >
         Full-Stack
-      </NavPortfolioCard>
+      </ProjectNav>
     </nav>
     <div
       class="flex flex-wrap justify-center items-start mt-12 gap-x-[2%] gap-y-4"
     >
-      <PortfolioCard
+      <ProjectCard
         v-for="(project, index) in filteredProjects"
         :key="index"
         :project="project"
       >
-      </PortfolioCard>
+      </ProjectCard>
     </div>
   </section>
 </template>
 <script>
-import NavPortfolioCard from '@/components/UI/NavPortfolioCard.vue';
-import PortfolioCard from '@/components/UI/PortfolioCard.vue';
+import ProjectNav from '@/components/projects/ProjectNav.vue';
+import ProjectCard from '@/components/projects/ProjectCard.vue';
 
 import Portfolio from '@/assets/images/projects/portfolio.png';
 import ApiForLendingBooks from '@/assets/images/projects/api_for_lending_books.png';
@@ -77,8 +77,8 @@ import TreeStructure from '@/assets/images/projects/tree-structure.png';
 export default {
   name: 'Portfolio',
   components: {
-    NavPortfolioCard,
-    PortfolioCard,
+    ProjectNav,
+    ProjectCard,
   },
   data() {
     return {

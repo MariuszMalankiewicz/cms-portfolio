@@ -48,40 +48,40 @@
       <div>
         <h2 class="font-semibold text-[18px]">Frontend</h2>
         <div class="flex flex-wrap">
-          <TechCard v-for="tech in FrontendTechItems">
+          <AboutTechCard v-for="tech in FrontendTechItems">
             <template #first>
               <div v-html="tech.icon"></div>
             </template>
             <template #secound>
               <p>{{ tech.name }}</p>
             </template>
-          </TechCard>
+          </AboutTechCard>
         </div>
       </div>
       <div class="my-8">
         <h2 class="font-semibold text-[18px]">Backend</h2>
         <div class="flex flex-wrap">
-          <TechCard v-for="tech in BackendTechItems">
+          <AboutTechCard v-for="tech in BackendTechItems">
             <template #first>
               <div v-html="tech.icon"></div>
             </template>
             <template #secound>
               <p>{{ tech.name }}</p>
             </template>
-          </TechCard>
+          </AboutTechCard>
         </div>
       </div>
       <div class="my-8">
         <h2 class="font-semibold text-[18px]">Narzedzia</h2>
         <div class="flex flex-wrap">
-          <TechCard v-for="tech in ToolsTechItems">
+          <AboutTechCard v-for="tech in ToolsTechItems">
             <template #first>
               <div v-html="tech.icon"></div>
             </template>
             <template #secound>
               <p>{{ tech.name }}</p>
             </template>
-          </TechCard>
+          </AboutTechCard>
         </div>
       </div>
     </div>
@@ -90,10 +90,10 @@
 
 <script>
 import DeveloperActivity from '@/assets/images/developer-activity.png';
-import TechCard from '@/components/UI/TechCard.vue';
+import AboutTechCard from '@/components/abouts/AboutTechCard.vue';
 export default {
   name: 'About',
-  components: { TechCard },
+  components: { AboutTechCard },
   data() {
     return {
       FrontendTechItems: [
@@ -207,7 +207,7 @@ export default {
         },
       ],
       DeveloperActivity,
-      TechCard,
+      AboutTechCard,
     };
   },
 };

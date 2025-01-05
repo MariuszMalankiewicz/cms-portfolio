@@ -44,14 +44,14 @@
         >
         <router-link
           class="transition-all duration-150 ease-in-out"
-          to="/portfolio"
+          to="/project"
           :class="[
-            $route.path === '/portfolio'
+            $route.path === '/project'
               ? 'border-b-[2px] border-dark-blue'
               : 'text-black bg-white',
           ]"
           @click.native="closeMenu"
-          >Portfolio</router-link
+          >Project</router-link
         >
         <router-link
           class="transition-all duration-150 ease-in-out"
@@ -105,13 +105,13 @@
       >
       <router-link
         class="transition-all duration-150 ease-in-out"
-        to="/portfolio"
+        to="/project"
         :class="[
-          $route.path === '/portfolio'
+          $route.path === '/project'
             ? 'border-b-[2px] border-dark-blue'
             : 'text-black bg-white',
         ]"
-        >Portfolio</router-link
+        >Project</router-link
       >
       <router-link
         class="transition-all duration-150 ease-in-out"

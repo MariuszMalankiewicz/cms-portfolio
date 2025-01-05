@@ -40,9 +40,8 @@
               rows="5"
             ></textarea>
           </label>
-          <PrimareButton
-            class="mt-2 text-white hover:bg-dark-blue/90 bg-dark-blue"
-            >Wyślij</PrimareButton
+          <BaseButton class="mt-2 text-white hover:bg-dark-blue/90 bg-dark-blue"
+            >Wyślij</BaseButton
           >
         </form>
       </div>
@@ -51,14 +50,14 @@
 </template>
 <script>
 import ContactImage from '@/assets/images/contact.png';
-import PrimareButton from '@/components/UI/PrimareButton.vue';
+import BaseButton from '@/components/buttons/BaseButton.vue';
 export default {
   name: 'Contact',
-  components: { PrimareButton },
+  components: { BaseButton },
   data() {
     return {
       ContactImage,
-      PrimareButton,
+      BaseButton,
     };
   },
 };

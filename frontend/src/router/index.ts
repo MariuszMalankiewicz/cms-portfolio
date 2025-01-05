@@ -1,17 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import PublicLayout from '@/components/layouts/public/PublicLayout.vue';
+import PublicLayout from '@/components/layouts/PublicLayout.vue';
+import AdminLayout from '@/components/layouts/AdminLayout.vue';
 const routes = [
   {
     path: '/',
     component: PublicLayout,
     children: [
-      { path: '', name: 'Home', component: () => import('@/views/public/Home.vue') },
-      { path: '/about', name: 'About', component: () => import('@/views/public/About.vue') },
-      { path: '/portfolio', name: 'Portfolio', component: () => import('@/views/public/Portfolio.vue') },
-      { path: '/contact', name: 'Contact', component: () => import('@/views/public/Contact.vue') },
-      { path: '/login', name: 'Login', component: () => import('@/views/public/Login.vue') },
+      { path: '', name: 'Home', component: () => import('@/views/Home.vue') },
+      { path: '/about', name: 'About', component: () => import('@/views/About.vue') },
+      { path: '/project', name: 'Project', component: () => import('@/views/Project.vue') },
+      { path: '/contact', name: 'Contact', component: () => import('@/views/Contact.vue') },
+      { path: '/login', name: 'Login', component: () => import('@/views/Login.vue') },
     ],
   },
+  {
+    path: '/admin',
+    component: AdminLayout,
+    children: [
+      { path: '', name: 'Dashboard', component: () => import('@/views/admin/Dashboard.vue') },
+    ],
+  }
 ];
 
 const router = createRouter({

@@ -5,17 +5,17 @@
         <p class="text-[16px]">Web Developer</p>
         <h2 class="font-semibold text-[18px]">Mariusz Malankiewicz</h2>
       </div>
-      <PublicNavigation />
+      <PublicTopNav />
     </div>
   </header>
 </template>
 
 <script>
-import PublicNavigation from '@/components/layouts/public/partials/PublicNavigation.vue';
+import PublicTopNav from '@/components/navs/PublicTopNav.vue';
 export default {
   name: 'PublicHeader',
   components: {
-    PublicNavigation,
+    PublicTopNav,
   },
 };
 </script>

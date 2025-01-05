@@ -35,10 +35,10 @@
             class="w-full block py-1.5 px-4 mt-6 lg:rounded-2xl border-b-[2px]"
           />
           <p class="mt-3 font-bold text-red-600">{{ error }}</p>
-          <PrimareButton
+          <BaseButton
             type="submit"
             class="block mt-6 font-semibold text-center text-white cursor-pointer lg:text-black bg-dark-blue lg:bg-white lg:hover:bg-white/80 rounded-2xl"
-            >Zaloguj się</PrimareButton
+            >Zaloguj się</BaseButton
           >
         </form>
         <p class="mt-6 text-gray-800 lg:mt-4 lg:text-white">
@@ -55,16 +55,16 @@
 </template>
 <script>
 import LoginImage from '@/assets/images/Tablet login-rafiki.png';
-import PrimareButton from '@/components/UI/PrimareButton.vue';
+import BaseButton from '@/components/buttons/BaseButton.vue';
 import apiClient from '@/services/api.js';
 
 export default {
   name: 'Login',
-  components: { PrimareButton },
+  components: { BaseButton },
   data() {
     return {
       LoginImage,
-      PrimareButton,
+      BaseButton,
       email: '',
       password: '',
       error: '',

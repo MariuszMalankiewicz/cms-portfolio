@@ -37,16 +37,15 @@
           class="flex flex-wrap justify-start items-center gap-[20px] mt-6 text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] mb-12"
         >
           <router-link to="/portfolio"
-            ><PrimareButton
-              class="text-white hover:bg-dark-blue/90 bg-dark-blue"
-              >Zobacz Projekty</PrimareButton
+            ><BaseButton class="text-white hover:bg-dark-blue/90 bg-dark-blue"
+              >Zobacz Projekty</BaseButton
             ></router-link
           >
-          <PrimareButton class="text-white bg-gray-300 hover:bg-gray-400/80">
+          <BaseButton class="text-white bg-gray-300 hover:bg-gray-400/80">
             <a href="/frontend-dist/Mariusz Malankiewicz CV.pdf" download
               >Pobierz CV</a
             >
-          </PrimareButton>
+          </BaseButton>
         </div>
       </div>
     </div>
@@ -55,14 +54,14 @@
 
 <script>
 import ManLooking from '@/assets/images/man-looking.png';
-import PrimareButton from '@/components/UI/PrimareButton.vue';
+import BaseButton from '@/components/buttons/BaseButton.vue';
 export default {
   name: 'Home',
-  components: { PrimareButton },
+  components: { BaseButton },
   data() {
     return {
       ManLooking,
-      PrimareButton,
+      BaseButton,
     };
   },
 };
