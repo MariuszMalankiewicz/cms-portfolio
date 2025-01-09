@@ -1,5 +1,7 @@
 <template>
-  <div class="w-full h-[100vh] bg-gray-600"></div>
+  <section class="w-full h-[100vh] pt-28 lg:pt-12">
+    <h1 class="font-bold text-center">Kokpit</h1>
+  </section>
 </template>
 <script>
 export default {

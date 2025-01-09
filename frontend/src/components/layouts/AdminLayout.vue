@@ -1,7 +1,7 @@
 <template>
-  <AdminHeader />
+  <AdminHeader class="lg:w-[25%] lg:h-[100vh]" />
   <main>
-    <router-view />
+    <router-view class="lg:ml-[25%] lg:w-[75%]" />
   </main>
 </template>
 <script>
